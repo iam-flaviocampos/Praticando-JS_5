@@ -7,16 +7,14 @@ dar sugestões e dicas!
 Este e todos os outros exercícios foram tirados do curso "Web Moderno Completo com
 JavaScript 2022 + Projetos" na Udemy.
 
-Começando com o cálculo de juros simples, eu criei uma função chamada "jurosSimples" que recebe quatro parâmetros: "capitalInicial", "adicao", "taxaDeJuros" e "periodoDeTempo". Esses parâmetros representam, respectivamente, o capital inicial, o valor adicionado, a taxa de juros (expressa como um decimal) e o período de tempo.
+Eu criei uma função chamada "numero" que recebe dois valores como entrada: "valor1" e "valor2". Esses valores representam dois números que serão somados.
 
-Dentro da função, eu realizo os cálculos necessários para calcular o montante final usando a fórmula dos juros simples. Primeiro, eu multiplico a taxa de juros pelo período de tempo e armazeno o resultado na variável "resul1". Em seguida, adiciono o valor "adicao" a "resul1" e guardo o resultado na variável "resul2". Por fim, multiplico o "capitalInicial" por "resul2" para obter o montante final, que é armazenado na variável "resulFinal". Essa variável é retornada pela função.
+Dentro da função, eu simplesmente retorno a soma dos dois valores, ou seja, "valor1 + valor2".
 
-Após a definição da função, eu chamo a função "jurosSimples" passando os valores 10000, 1, 0.05 e 3 como argumentos. O resultado retornado pela função é armazenado na variável "resultado1". Em seguida, eu formato esse resultado utilizando o método parseFloat().toLocaleString('pt-BR'), para formatá-lo como uma string no formato monetário brasileiro. Por fim, exibo o resultado formatado no console.
+Após definir a função, eu a chamo passando os valores 0.1 e 0.2 como argumentos. A função realiza a soma dos dois valores e retorna o resultado.
 
-Agora, passando para o cálculo de juros compostos, eu criei uma nova função chamada "jurosCompostos" que também recebe quatro parâmetros: "capitalInicial", "adicao", "taxaDeJuros" e "periodoDeTempo".
+Eu armazeno o resultado retornado pela função na variável "resul". Em seguida, utilizo o método toLocaleString() para formatar o resultado como uma string no formato monetário brasileiro. Utilizo as opções {style: 'currency', currency: 'BRL'} para definir o estilo da formatação como moeda brasileira (BRL).
 
-Dentro da função, eu realizo os cálculos necessários para calcular o montante final usando a fórmula dos juros compostos. Primeiro, somo o valor "adicao" à taxa de juros e armazeno o resultado na variável "resul1". Em seguida, utilizo a função Math.pow() para elevar "resul1" à potência de "periodoDeTempo" e guardo o resultado na variável "resul2". Por fim, multiplico "resul2" pelo "capitalInicial" para obter o montante final, que é armazenado na variável "resulFinal". Essa variável é retornada pela função.
+Por fim, exibo o resultado formatado no console usando console.log().
 
-Após a definição da função, eu chamo a função "jurosCompostos" passando os valores 10000, 1, 0.05 e 3 como argumentos. O resultado retornado pela função é armazenado na variável "resultado2". Em seguida, eu utilizo o método toFixed(5) para limitar o resultado a 5 casas decimais após a vírgula. Em seguida, formato o resultado como uma string no formato monetário brasileiro utilizando o método parseFloat().toLocaleString('pt-BR'). Por fim, exibo o resultado formatado no console.
-
-Dessa forma, o código calcula o montante final tanto para juros simples como para juros compostos, e exibe os resultados no console.
+Dessa forma, o código realiza a soma de dois valores e exibe o resultado formatado como moeda brasileira no console. No exemplo fornecido, a soma de 0.1 e 0.2 é 0.3, então o console vai exibir "R$ 0,30".
